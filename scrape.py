@@ -3,14 +3,14 @@ import os
 from urllib.parse import urlparse, parse_qs
 
 # Google Custom Search Engine (CSE) API key
-API_KEY = 'AIzaSyBvAay-k6ZgiObQk13HKtV79QMLop4_9ko'
+API_KEY = 'key';
 
 # Google Custom Search Engine (CSE) search engine ID
-SEARCH_ENGINE_ID = '2286b97e3f4834b4d'
+SEARCH_ENGINE_ID = 'id';
 
 # Function to perform a search using Google CSE
 def google_cse_search(query):
-    url = f"https://www.googleapis.com/customsearch/v1?key={'AIzaSyBvAay-k6ZgiObQk13HKtV79QMLop4_9ko'}&cx={'2286b97e3f4834b4d'}&q={query}"
+    url = f"https://www.googleapis.com/customsearch/v1?key={key}&cx={id}&q={query}"
     response = requests.get(url)
     data = response.json()
     return data
